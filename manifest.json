@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "lichess.org blindfold button",
+  "description": "This extension adds button to lichess.org which allows you to hide chess pieces",
+  "version": "0.0.1",
+  "icons": {
+    "512": "logo/logo-512.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "lichess-hide-chess-pieces.js"
+      ],
+      "css": [
+        "lichess-hide-chess-pieces.css"
+      ],
+      "matches": [
+        "https://lichess.org/*"
+      ]
+    }
+  ]
+}
